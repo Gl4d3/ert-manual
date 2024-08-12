@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERT User Guide - Horizontal Balances Window</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .figure {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .figure img {
+            border: 1px solid #ddd;
+        }
+        .figure-caption {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>4.3 Horizontal Balances</h1>
+    <p>The Horizontal Balances window contains another main functionality of the application, generating horizontal energy loss reports. Horizontal energy loss reports are reports on energy loss as energy is transmitted across administrative boundaries. Figure 4.13 shows how the Horizontal Balances window appears in ERT.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Horizontal Balances Window">
+        <p class="figure-caption">Figure 4.13: Horizontal Balances Window</p>
+    </div>
+    <p>The window is also divided into two sections. These are the selection criteria and report sections. These are labeled 1 and 2 respectively in the image below.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Horizontal Balance Sections">
+        <p class="figure-caption">Figure 4.14: Horizontal Balance Sections</p>
+    </div>
+    <p>The selection criteria only contains one dropdown in which the user selects the financial year. This parameter is used to generate the report shown in the reports section.</p>
+    <p>The reports section generates three reports. These are:</p>
+    <ol>
+        <li>Monthly horizontal balances</li>
+        <li>Cumulative horizontal balances</li>
+        <li>Regional purchases report</li>
+    </ol>
+
+    <h2>Montly Horizontal Balances</h2>
+    <p>This report contains the monthly horizontal balances for the financial year selected. It contains two sections</p>
+    <p>The first sections shows the horizontal balance for each region. Each region has three entries. The entries are differentiated by their description. The descriptions in the report for each region are:</p>
+        <ul>
+            <li>Units Purhcased (Gwh)</li>
+            <li>Net Sales (Gwh)</li>
+            <li>Efficiency (%)</li>
+        </ul>
+    <p>The second section contains the totals of the three descriptions for the particular month</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Monthly Horizontal Balances Report">
+        <p class="figure-caption">Figure 4.15: Monthly Horizontal Balances Report</p>
+    </li>
+
+    <h2>Cumulative Horizontal Balances</h2>
+    <p>This report contains the cumulative horizontal balances for the financial year selected. This is shown in Figure 4.13. It is to be noted that the values of the first month shown in the report are the balances for that one month. For the months that follow, the values displayed are a summation of the balances for that month and the months before them</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Cumulative Horizontal Balances Report">
+        <p class="figure-caption">Figure 4.16: Cumulative Horizontal Balances Report</p>
+    </div>
+
+    <h2>Regional Purchases Report</h2>
+    <p>This report shows the energy purchases done grouped by region. Each region contains a bar for each month of the financial year selected. This is shown in Figure 4.14.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Regional Purchases Report">
+        <p class="figure-caption">Figure 4.17: Regional Purchases Report</p>
+    </div>
+
+</body>
+</html>

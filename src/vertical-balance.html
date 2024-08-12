@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERT User Guide - Vertical Balances Window</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .figure {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .figure img {
+            border: 1px solid #ddd;
+        }
+        .figure-caption {
+            font-style: italic;
+            color: #666;
+        }
+        ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>4.2 Vertical Balances</h1>
+    <p>The Vertical Balances window contains one of the main functionalities of the application, generating vertical energy loss reports. Vertical energy loss reports are reports on energy loss from transmission to customer consumption. Figure 4.2 shows how the Vertical Balances window appears in ERT.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Vertical Balances Window">
+        <p class="figure-caption">Figure 4.2: Vertical Balances Window</p>
+    </div>
+    <p>
+        The window is divided into two sections. These are the selection criteria and report sections. InFigure 4.3, they are labeled 1 and 2 respectively
+    </p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Vertical Balances Window Sections">
+        <p class="figure-caption">Figure 4.2: Vertical Balances Windows Section</p>
+    </div>
+
+    <p>In the selection criteria, a user selects the criteria that will be used to generate the reports to bedisplayedinthe reports section. The criteria include: 
+        <ol>
+            <li>Calculation Type</li>
+            <li>Date Period</li>
+            <li>Network Options</li>
+        </ol>        
+
+    <h2>1. Calculation Types</h2>
+    <ul>
+        <li><b>Monthly Period : </b>When this is selected, the values generated are constrained to between the first day and the last dayof thecalendar month.</li>
+        <li><b>Billing Cycle : </b>When this is selected, the values generated are constrained to between the 5th of the previous month and the 4th of the current month. This is in alignment with KPLC's billing cycle</li>
+        <li><b>Prorated Period :</b>When this is selected, customer consumption that span more than one month and are under onebill aresplitto obtain the daily consumption, which is used to calculate the monthly consumption. <br> Example:  If a customer was billed one bill for the period between 25th January and 3rd March, their total consumption for that period will be divided the number of days in that period (25th Jan - 3rd Mar) to obtain the daily consumption. This daily consumption can be used to calculate customer’s consumption for the month of February, i.e. Daily Consumption * Number of Days in February</li>
+    </ul>
+    
+    <h2> 2. Date Period</h2>
+        <p>This contains two dropdowns; one to select the Start Month when the report should begin and, one to select the End Month when the report should end.</p>
+
+    <h2>3. Network Options</h2>
+    <p>This is a dropdown that allows the user to select which network element they want they report to contain. It only allow selection of one network element. The network elements available in the dropdown list are:</p>
+        <ul>
+            <li>Feeder 66</li>
+            <li>LV Circuit</li>
+            <li>None</li>
+            <li>Primary Feeder</li>
+            <li>Primary Substation</li>
+            <li>Secondary Substation</li>
+            <li>Transmission Feeder</li>
+            <li>Transmission Substation</li>
+        </ul>
+    <p>The ‘None’ option refers to no specific network element. Rather, when selected, all network elements will be included in the reports generated. The dropdown list is shown in Figure 4.4.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Network Options Dropdown">
+        <p class="figure-caption">Figure 4.4: Network Options Dropdown</p>
+    </div>
+
+    <h2>4. Reports Section</h2>
+    <p>In the reports section, there a couple of reports generated. These include the following:</p>
+    <ol>
+        <li>Monthly Energy Balances</li>
+        <li>Cumulative Energy Balances</li>
+        <li>Per Region Report</li>
+        <li>Per County Report</li>
+        <li>Excecution Analysis Report</li>
+    </ol>
+
+    <h3>1. Monthly Energy Balnces</h3>
+    <p>This report shows the energy loss for the selected network element for the selected period. The report is shown in Figure 4.5.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Monthly Vertical Energy Balances Report">
+        <p class="figure-caption">Figure 4.5: Monthly Vertical Energy Balances Report</p>
+    </div>
+
+    <h3>2. Cumulative Energy Balances</h3>
+    <p>This report contains the cumulative losses of each feeder meter based on the date period defined by the user. It can be used to generate annual, semi-annual and quarterly reports. See Figure 4.6 below</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Cumulative Vertical Energy Balances Report">
+        <p class="figure-caption">Figure 4.6: Cumulative Vertical Energy Balances Report</p>
+    </div>
+
+    <h3>3. Per Region Report</h3>
+    <p>This report contains a summary of the cumulative energy balance grouped by region. See Figure 4.6 below.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Per Region Report">
+        <p class="figure-caption">Figure 4.7: Per Region Report</p>
+    </div>
+
+    <h3>4. Per County Report</h3>
+    <p>This report contains a summary of the cumulative energy balance grouped by county. See Figure 4.7 below.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Per County Report">
+        <p class="figure-caption">Figure 4.8: Per County Report</p>
+    </div>
+
+    <h3>5. Execution Analysis Report</h3>
+    <p>This report contains a table that shows the results of the different report executions that have been done over time. This enables the user to see how the losses changes as rebilling is done over time. A user can also schedule an execution by clocking the “Schedule Execution” button at the right side of the screen.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Execution Analysis Report">
+        <p class="figure-caption">Figure 4.9: Execution Analysis Report</p>
+    </div>
+    <p>Clicking the Schedule Execution button opens up a modal as shown in the image below. The image has two tabs; the Scheduled Executions and Schedule Execution tabs.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Schedule Execution Modal">
+        <p class="figure-caption">Figure 4.10: Schedule Execution Modal</p>
+    </div>
+
+    <p>The Scheduled Executions tab has a table that contains details of previous executions. From here, a user can see the status of the execution they had scheduled. This status is shown in the Calculation Status column. There are four statuses than a scheduled execution can be in. These are:</p>
+    <ul>
+        <li>Pending</li>
+        <li>Running</li>
+        <li>Completed</li>
+        <li>Cancelled</li>
+    </ul>
+
+    <p>The Schedule Execution tab contains a form that the user fills in to schedule an execution for a future date. This is shown in the image below.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Schedule Execution Tab in Schedule Form Modal">
+        <p class="figure-caption">Figure 4.11: Schedule Execution Tab in Schedule Form Modal</p>
+    </div>
+
+    <h1>Processes</h1>
+    <p>The processes that can be carried out in the Vertical Balances window include calculating vertical balances and scheduling the execution of calculation of a balance for a later period.</p>
+
+    <h2>1. Calculating Vertical Balances</h2>
+    <p>To calculate vertical balances, follow the following steps</p>
+    <ol>
+        <li>Select the calculation type. There are there calculation types described in the previous modules</li>
+        <li>Select the period for which you want to calculate the balances for. Select a start month and an end month. The end month should be greater than the start month.</li>
+        <li>Select the network type for which you want to calculate the balances for. </li>
+        <li>Click the search icon to the right of the network type dropdown. </li>
+    </ol>
+
+    <h2>2. Scheduling Balance Execution</h2>
+    <p>To  schedule a balance execution, follow the following steps: </p>
+    <ol>
+        <li>Click the Execution Analysis tab in the reports section. </li>
+        <li>Click the schedule execution button on the right. It should like similar to the image below. On clicking the button, a modal should appear as shown below in Figure 4.10
+        <div class="figure">
+            <img src="/api/placeholder/800/600" alt="Schedule Execution Modal">
+            <p class="figure-caption">Figure 4.10: Schedule Execution Modal</p>
+        </li>
+        <li>Click the Schedule Execution tab. A similar form should appear as in shown in Figure 4.11.</li>
+        <li>Select schedule date. The date should be greater than or equal to the current date.</li>
+        <li>Select the month for which you want to recalculate the balance.</li>
+        <li>Select the calculation type as defined previously</li>
+        <li>Click Create</li>
+    </ol>
+</body>
+</html>

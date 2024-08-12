@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERT User Guide - Home Window</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .figure {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .figure img {
+            border: 1px solid #ddd;
+        }
+        .figure-caption {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>4.5 Network Meter Reading</h1>
+    <p>The Network Meter Reading window is used to view the meter readings of the network meters. Figure 4.21 below show how it appears in ERT.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Network Meter Reading Window">
+        <p class="figure-caption">Figure 4.21: Network Meter Reading Window</p>
+    </div>
+    <p>The window contains 3 main sections. These are:</p>
+    <ul>
+        <li>Meter search</li>
+        <li>Network Meter Table</li>
+        <li>Meter Readings Table</li>
+    </ul>
+    <p>The sections are marked 1, 2 and 3 respectively in the figure below</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Network Meter Reading Sections">
+        <p class="figure-caption">Figure 4.22: Network Meter Reading Sections</p>
+    </div>
+
+    <p>The Meter Search section enables the user to search for a meter based on region, county and network type. The Network Meter Table contains all the network meters present in an area based on the criteria set in the Meter Search. The Meter Readings Table contains the readings of a selected meter from the list of meters in the Network Meter Table. Each record in the Meter Readings Table contains an edit button on the left under the ‘Edit’ column. This enables the user to edit the existing reading. </p>
+    <p>On clicking the edit button, a modal appears as shown in the figure below. The modal has two tabs including Modification History and Edit Meter Reading. The Modification History tab contains a history of the modification of a meter reading. The Edit Meter Reading tab contains a form that allows the user to edit a meter reading. This is shown in Figure 4.24.</p>
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Meter Reading Information Modal">
+        <p class="figure-caption">Figure 4.23: Meter Reading Information Modal</p>
+    </div>
+
+    <div class="figure">
+        <img src="/api/placeholder/800/600" alt="Edit Meter Reading Tab in Meter Reading Information Modal">
+        <p class="figure-caption">Figure 4.24: Edit Meter Reading Tab in Meter Reading Information Modal</p>
+    </div>
+
+
+    <h1>Processes</h1>
+    <p>The processes that can be carried out in the Network Meter Reading window including searching for a meter and editing a reading.</p>
+
+    <h2>Searching for a meter</h2>
+    <p>To search for a meter, follow the following steps:</p>
+    <ol>
+        <li>Select a region from the region dropdown. This narrows the search to a specific region. If the ‘All’ option is selected, all meters in the network tree will be displayed.</li>
+        <li>Select a county from the county dropdown. This narrows the search to a specific county within the selected region. If the ‘All’ option is selected, all meters in the selected region will be shown. If the region was also set to ‘All’, all meters in the network tree will be displayed.</li>
+        <li>Selected the network element in which the meter is located in.</li>
+        <li>Click search.</li>
+    </ol>
+
+    <h2>Editing a meter reading</h2>
+    <p>To edit a meter reading, follow the following steps:</p>
+    <ol>
+        <li>Click the edit icon on the left of any record in the Meter Readings table. The icon is under the ‘Edit’ column.</li>
+        <li>Select the Edit Meter Reading tab.</li>
+        <li>From here, you can modify the previous reading and the current reading. You can also modify the reading date and the reading month.</li>
+    </ol>
+</body>
+</html>

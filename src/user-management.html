@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERT User Guide - Home Window</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+      }
+      h1 {
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 10px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+      .figure {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .figure img {
+        border: 1px solid #ddd;
+      }
+      .figure-caption {
+        font-style: italic;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>4.7 User Management</h1>
+    <p>
+      The User Management window is used to manage the users in the system. It
+      enables a user to create, view and modify users and their assigned
+      profile. The window look as shown in the figure below.
+    </p>
+    <div class="figure">
+      <img src="/api/placeholder/800/600" alt="User Management Window" />
+      <p class="figure-caption">Figure 4.31: User Management Window</p>
+    </div>
+    <p>
+      On clicking the ‘Create User’ button, a modal is opened that enable the
+      user to create a new system user. The modal opened is shown in the image
+      below.
+    </p>
+    <div class="figure">
+      <img
+        src="/api/placeholder/800/600"
+        alt="Create User Modal in User Management Window"
+      />
+      <p class="figure-caption">
+        Figure 4.32: Create User Modal in User Management Window
+      </p>
+    </div>
+    <p>
+      The button on the left of every record is used to modify the details of
+      the user. The button looks similar to the image shown below
+    </p>
+    <div class="figure">
+      <img src="/api/placeholder/800/600" alt="Modify User Button" />
+      <p class="figure-caption">Figure 4.33: Edit Profile Button</p>
+    </div>
+
+    <p>
+      On clicking it, a modal is opened which enables the user to edit the
+      details of an existing user. The modal opened appears as shown below.
+    </p>
+    <div class="figure">
+      <img src="/api/placeholder/800/600" alt="Edit User Modal" />
+      <p class="figure-caption">Figure 4.34: Edit User Modal</p>
+    </div>
+
+    <p>
+      The button on the right of every record, under the column name ‘Password
+      Action’, is opens a modal that enables the user to edit a user’s password
+      including their own. The modal appears as shown in the image below.
+    </p>
+    <div class="figure">
+      <img
+        src="/api/placeholder/800/600"
+        alt="Change User Password Modal in User Management Window"
+      />
+      <p class="figure-caption">
+        Figure 4.35: Change User Password Modal in User Management Window
+      </p>
+    </div>
+
+    <h1>Processes</h1>
+    <p>
+      The processes that can be carried out in the User Management Window
+      include creating a user, editing a user, deleting a user and changing a
+      user’s password. These are described below.
+    </p>
+
+    <h2>1. Creating a User</h2>
+    <p>To create a user, follow the following steps:</p>
+    <ol>
+      <li>
+        Click the ‘Create User’ button. This opens up a modal with a form to
+        enter the new user’s information.
+      </li>
+      <li>Enter their staff number.</li>
+      <li>Enter their first name.</li>
+      <li>Enter their other name.</li>
+      <li>Enter their email address.</li>
+      <li>
+        Select a profile from the dropdown. The profile selected will determine
+        the level of access of the user within the system.
+      </li>
+      <li>
+        Select the status of the new user. The status indicates whether the
+        created user will be active or inactive within the system. If a user’s
+        status is set to inactive, they are not able to log into the system.
+      </li>
+      <li>
+        Click the ‘Create’ button at the bottom right of the modal to create the
+        user.
+      </li>
+    </ol>
+
+    <h2>Editing a user</h2>
+    <p>To edit a user, follow the following steps:</p>
+    <ol>
+      <li>
+        Click the button on the left most side of any record. The button should
+        like similar to Figure 4.33. A modal will open up contain the current
+        details of the user.
+      </li>
+      <li>Edit any of the user details.</li>
+      <li>
+        Click ‘Apply Changes’ at the bottom right of the modal to save your
+        changes.
+      </li>
+    </ol>
+
+    <h2>Deleting a user</h2>
+    <p>To delete a user, follow the following steps:</p>
+    <ol>
+        <li>
+            Click the button on the left most side of any record. The button should like similar to Figure 4.33. A modal will open up contain the current details of the user.
+        </li>
+        <li>
+            Click the ‘Delete’ button at the bottom left side of the modal. It should be right next to the ‘Cancel’ button.
+        </li>
+        <li>
+            On clicking the Delete button, a dialog will pop up asking you to confirm your action. Click the red ‘Delete’ button in the dialog to complete your action.
+        </li>
+    </ol>
+    <h2>Changing a user's password</h2>
+    <p>To change a user's password, follow the folliwng steps:</p>
+    <ol>
+        <li>
+            Click the button to the right of any record. The button should be under the ‘Password Action’ column. A modal will open up showing the selected user’s staff number.
+        </li>
+        <li>
+            Enter the new password in the password field. You also have the option of directly setting the user’s staff number as their password through the checkbox above the password field.
+        </li>
+        <li>
+            Click the ‘Save’ button at the bottom right of the modal to persist your changes.
+        </li>
+    </ol>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Reporting Tool (ERT) Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            color: #0044cc;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .table th, .table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #f0f0f0;
+        }
+        .highlight {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #2c3e50;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Energy Reporting Tool (ERT) System Documentation</h1>
+    </header>
+
+    <div class="content">
+        <nav style="display: flex; justify-content: space-between;">
+            <a href="#introduction">Introduction</a>
+            <a href="#accessing-system">Accessing the System</a>
+            <a href="#navigation">Navigating the System</a>
+            <a href="#ert-windows">ERT Windows</a>
+            <a href="#reports">Generating Reports</a>
+        </nav>
+
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>The Energy Reporting Tool (ERT) is a web-based application designed to enable energy companies to calculate energy losses over time. The tool generates detailed reports to help identify the causes of energy losses within an energy network.</p>
+        </section>
+
+        <section id="accessing-system" class="section">
+            <h2>Accessing the System</h2>
+            <p>To access the ERT, users will be provided with a login link. Users need to enter their username and password on the login page, as shown below:</p>
+            <figure>
+                <img src="login_page.png" alt="Login Page">
+                <figcaption>Figure 1: Login Page</figcaption>
+            </figure>
+            <p>Users can also select the 'Remember me' checkbox to save their username for future logins.</p>
+        </section>
+
+        <section id="navigation" class="section">
+            <h2>Navigating the System</h2>
+            <p>Upon successful login, users will be directed to the Home window. The top bar includes the application title, a feedback button, a help button, and a user profile button. The sidebar provides navigation to various sections of the application, including:</p>
+            <ul>
+                <li>Home</li>
+                <li>Vertical Balances</li>
+                <li>Horizontal Balances</li>
+                <li>Network Meter Management</li>
+                <li>Meter Readings</li>
+                <li>Exceptional Report</li>
+                <li>System Users</li>
+                <li>System Parameters</li>
+                <li>Manage Profiles</li>
+            </ul>
+        </section>
+
+        <section id="ert-windows" class="section">
+            <h2>ERT Windows</h2>
+            <p>Each window in the ERT system is designed to facilitate specific tasks. These include:</p>
+            <div class="highlight">
+                <h3>Home</h3>
+                <p>The Home window displays a summary of reports, including general performance reports, feeder distributions, and more.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>Vertical Balances</h3>
+                <p>This window allows users to generate vertical energy loss reports, which track energy loss from transmission to customer consumption. Users can select various criteria such as calculation type, date period, and network options to generate reports.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>Horizontal Balances</h3>
+                <p>The Horizontal Balances window enables the generation of reports on energy loss across administrative boundaries. Users select the financial year to generate reports that track these losses.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>Network Meter Management</h3>
+                <p>This section allows users to manage and monitor network meters, including location searches, network structures, and meter lists.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>Exceptional Reports</h3>
+                <p>This window is used to generate reports on exceptional cases, such as meters on feeders that are not in the database, large power customers, and elements with unknown locations.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>User Management</h3>
+                <p>Manage system users, their profiles, and roles. Users can create, edit, or delete profiles and set system parameters in this section.</p>
+            </div>
+        </section>
+
+        <section id="reports" class="section">
+            <h2>Generating Reports</h2>
+            <p>ERT allows users to generate various types of reports, including:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Report Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monthly Energy Balances</td>
+                        <td>Tracks monthly energy losses for each feeder meter.</td>
+                    </tr>
+                    <tr>
+                        <td>Cumulative Energy Balances</td>
+                        <td>Aggregates energy losses over a user-defined period, useful for annual, semi-annual, or quarterly reports.</td>
+                    </tr>
+                    <tr>
+                        <td>Per Region Report and per County</td>
+                        <td>Summarizes cumulative energy balances by region and county.</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Analysis Report</td>
+                        <td>Tracks the execution status of different report generations over time.</td>
+                    </tr>
+                    <tr>
+                        <td>Anomalies Reports</td>
+                        <td>Master report that contains anomalies and areas of concern within both the system and energy balance.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
